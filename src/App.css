@@ -1,38 +1,106 @@
 .App {
-  text-align: center;
+	text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+	background-color: rgb(247, 248, 241);
+	margin: 3rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* ICONS */
+span.add-remove-item {
+	position: absolute;
+	right: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+span.remove-item {
+	position: absolute;
+	right: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+span.check-item {
+	position: absolute;
+	left: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+span.add-remove-item:hover {
+	cursor: pointer;
+}
+
+span.check-item:hover {
+	cursor: pointer;
+}
+
+/* INPUT */
+.custom-input-wrapper {
+	position: relative;
+	display: grid;
+	align-items: center;
+}
+
+.custom-input-wrapper-addlist {
+	position: relative;
+	display: grid;
+	align-items: center;
+}
+
+.form-control::-webkit-input-placeholder {
+	color: #817878;
+}
+
+.form-control::-webkit-input-placeholder {
+	color: #817878;
+}
+
+.form-control:focus {
+	border-color: none;
+	box-shadow: none;
+}
+
+/* SHOPPING LIST */
+.shopping-list-wrapper {
+	padding: 1rem 2rem 3rem;
+	border-radius: 3px;
+	max-width: 600px;
+	min-width: 400px;
+	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+		0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+		0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+		0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.lists-wrapper {
+	background-color: #d6d2cd;
+	padding: 1rem 2rem 3rem;
+	border-radius: 3px;
+	max-width: 600px;
+	min-width: 400px;
+}
+
+h1 {
+	font-size: 2rem;
+	color: #242f4d;
+}
+
+.card-wrapper {
+	padding: 1.5rem;
+	margin: 2rem 1rem;
+	border-radius: 3px;
+	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+		0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+		0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+		0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.card-wrapper h4 {
+	font-size: 1.5rem;
+}
+
+.card-wrapper i:hover {
+	cursor: pointer;
+}
+
+.main-wrapper {
+	display: grid;
+	justify-content: center;
 }
