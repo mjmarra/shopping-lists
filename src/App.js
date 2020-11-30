@@ -9,7 +9,7 @@ function App() {
 		<Router>
 			<Switch>
 				<Route exact path="/" component={Home} />
-				<Route exact path="/lista/:id" component={ShoppingListPage} />
+				<Route exact path="/list/:id" component={ShoppingListPage} />
 			</Switch>
 		</Router>
 	);

@@ -6,7 +6,7 @@ export default function Home() {
 	return (
 		<div className="main-wrapper">
 			<div className="lists-wrapper">
-				<h4 className="my-4 text-center">Mis listas de compra</h4>
+				<h4 className="my-4 text-center">My shopping lists</h4>
 				<AddList />
 				<Lists />
 			</div>

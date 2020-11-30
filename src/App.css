@@ -38,7 +38,7 @@ span.check-item:hover {
 	align-items: center;
 }
 
-.custom-input-wrapper-addlist {
+.addlist-wrapper {
 	position: relative;
 	display: grid;
 	align-items: center;

@@ -39,14 +39,14 @@ export default function ShoppingList() {
 							<img
 								src={iconMinus}
 								onClick={() => removeItem(index, id)}
-								alt="Agregar"
+								alt="Add"
 							/>
 						</span>
 					</ListGroup.Item>
 				) : (
 					<ListGroup.Item key={index} variant="secondary" className="text-left">
 						<span className="check-item">
-							<img src={iconChecked} alt="Agregar" />
+							<img src={iconChecked} alt="Add" />
 						</span>
 						<strike className="ml-3">{item.value}</strike>
 					</ListGroup.Item>

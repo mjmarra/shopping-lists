@@ -5,7 +5,7 @@ import { actionCreators } from "../redux/actions";
 import { format } from "date-fns";
 
 export default function ListCard({ list }) {
-	const itemsBoughtQuantity = list.items.filter((item) => item.bought).length;
+	const itemsBoughtQty = list.items.filter((item) => item.bought).length;
 
 	const dispatch = useDispatch();
 
@@ -19,16 +19,16 @@ export default function ListCard({ list }) {
 			style={{ backgroundColor: `${list.color}` }}
 		>
 			<div className="d-flex justify-content-between">
-				<Link to={`/lista/${list.id}`} style={{ color: "#3b3636" }}>
+				<Link to={`/list/${list.id}`} style={{ color: "#3b3636" }}>
 					<h4>{list.name}</h4>
 				</Link>
 				<h4>
-					{itemsBoughtQuantity}/{list.items.length}
+					{itemsBoughtQty}/{list.items.length}
 				</h4>
 			</div>
 			<div className="d-flex justify-content-between mt-4">
 				<small className="text-left">
-					Creada {format(list.createdAt, "dd/MM/yyyy")}
+					Created {format(list.createdAt, "dd/MM/yyyy")}
 				</small>
 				<i className="fas fa-trash" onClick={() => removeList(list.id)}></i>
 			</div>

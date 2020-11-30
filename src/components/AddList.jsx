@@ -7,10 +7,6 @@ export default function AddList() {
 	const dispatch = useDispatch();
 	const [input, setInput] = useState("");
 
-	const handleInputChange = (e) => {
-		return setInput(e.target.value);
-	};
-
 	const handleClick = () => {
 		if (input !== "") {
 			dispatch(actionCreators.addList(input));
@@ -19,16 +15,16 @@ export default function AddList() {
 	};
 
 	return (
-		<div className="form-group custom-input-wrapper-addlist mb-5">
+		<div className="form-group addlist-wrapper mb-5">
 			<span className="add-remove-item">
-				<img src={iconPlus} onClick={handleClick} alt="Agregar" />
+				<img src={iconPlus} onClick={handleClick} alt="Add" />
 			</span>
 			<input
 				value={input}
-				onChange={handleInputChange}
+				onChange={(e) => setInput(e.target.value)}
 				type="text"
 				className="form-control bg-transparent border-0"
-				placeholder="Agregar lista..."
+				placeholder="Add list..."
 				autoComplete="off"
 			/>
 		</div>

@@ -23,14 +23,14 @@ export default function AddItem() {
 	return (
 		<div className="form-group custom-input-wrapper mb-5">
 			<span className="add-remove-item">
-				<img src={iconPlus} onClick={handleClick} alt="Agregar" />
+				<img src={iconPlus} onClick={handleClick} alt="Add" />
 			</span>
 			<input
 				value={input}
 				onChange={handleInputChange}
 				type="text"
 				className="form-control bg-transparent border-0"
-				placeholder="Agregar item..."
+				placeholder="Add item..."
 				autoComplete="off"
 			/>
 		</div>
