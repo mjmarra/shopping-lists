@@ -9,10 +9,6 @@ export default function AddItem() {
 	const dispatch = useDispatch();
 	const [input, setInput] = useState("");
 
-	const handleInputChange = (e) => {
-		return setInput(e.target.value);
-	};
-
 	const handleClick = () => {
 		if (input !== "") {
 			dispatch(actionCreators.addItem(input, id));
@@ -27,7 +23,7 @@ export default function AddItem() {
 			</span>
 			<input
 				value={input}
-				onChange={handleInputChange}
+				onChange={(e) => setInput(e.target.value)}
 				type="text"
 				className="form-control bg-transparent border-0"
 				placeholder="Add item..."
